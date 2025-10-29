@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserObjects>
+
+  <!-- UDO de los Depositos -->
+  <UserObject>
+
+    <UserObjectMD>
+
+      <CanCancel>tNO</CanCancel>
+      <CanClose>tNO</CanClose>
+      <CanDelete>tYES</CanDelete>
+      <CanFind>tYES</CanFind>
+      <CanYearTransfer>tNO</CanYearTransfer>
+      <CanApprove>tNO</CanApprove>
+      <CanArchive>tNO</CanArchive>
+      <CanLog>tYES</CanLog>
+      <CanCreateDefaultForm>tNO</CanCreateDefaultForm>
+      <EnableEnhancedForm>tYES</EnableEnhancedForm>
+
+
+      <ObjectType>boud_MasterData</ObjectType>
+      <TableName>VIST_DEPOSITO1</TableName>
+      <LogTableName>AVIST_DEPOSITO1</LogTableName>
+
+      <ObjectCode>VIST_DEPOSITO</ObjectCode>
+      <ObjectName>Maestro de depósitos</ObjectName>
+      <ManageSeries>tNO</ManageSeries>
+
+      <FatherMenuID></FatherMenuID>
+      <MenuID></MenuID>
+      <MenuCaption></MenuCaption>
+    </UserObjectMD>
+
+    <FindColumns>
+
+      <row>
+        <LineID>0</LineID>
+        <ColumnAlias>DocEntry</ColumnAlias>
+      </row>
+
+      <row>
+        <LineID>1</LineID>
+        <ColumnAlias>Object</ColumnAlias>
+      </row>
+
+      <row>
+        <LineID>2</LineID>
+        <ColumnAlias>UserSign</ColumnAlias>
+      </row>
+    </FindColumns>
+  </UserObject>
+
+  <UserObject>
+
+    <UserObjectMD>
+
+      <CanCancel>tNO</CanCancel>
+      <CanClose>tNO</CanClose>
+      <CanDelete>tYES</CanDelete>
+      <CanFind>tYES</CanFind>
+      <CanYearTransfer>tNO</CanYearTransfer>
+      <CanApprove>tNO</CanApprove>
+      <CanArchive>tNO</CanArchive>
+      <CanLog>tYES</CanLog>
+      <CanCreateDefaultForm>tNO</CanCreateDefaultForm>
+      <EnableEnhancedForm>tYES</EnableEnhancedForm>
+
+
+      <ObjectType>boud_MasterData</ObjectType>
+      <TableName>VIST_COBRANZA1</TableName>
+      <LogTableName>AVIST_COBRANZA1</LogTableName>
+
+      <ObjectCode>VIST_COBRANZA</ObjectCode>
+      <ObjectName>Maestro de cobranzas</ObjectName>
+      <ManageSeries>tNO</ManageSeries>
+
+      <FatherMenuID></FatherMenuID>
+      <MenuID></MenuID>
+      <MenuCaption></MenuCaption>
+       </UserObjectMD>
+
+    <FindColumns>
+
+      <row>
+        <LineID>0</LineID>
+        <ColumnAlias>DocEntry</ColumnAlias>
+      </row>
+
+      <row>
+        <LineID>1</LineID>
+        <ColumnAlias>Object</ColumnAlias>
+      </row>
+
+      <row>
+        <LineID>2</LineID>
+        <ColumnAlias>UserSign</ColumnAlias>
+      </row>
+    </FindColumns>
+  </UserObject>
+
+</UserObjects>

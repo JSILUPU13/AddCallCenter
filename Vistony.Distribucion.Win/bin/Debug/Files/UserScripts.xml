@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserScripts>
+  
+  	<!-- Archivo para registrar los Categorys, User Querys y Stored Procedures FormattedSearches-->
+  <!--
+    <UserCategory Description = "Categoría para las búsquedas formateadas" >
+      <CategoryName>FORXAP-XXXXXX</CategoryName>
+    </UserCategory>
+
+    <UserCategory Description = "Categoría para Reportes">
+      <CategoryName>FORXAP-ZZZZZZ</CategoryName>
+    </UserCategory>
+
+    <UserQuery Description = " ">
+      <QueryName>user query XXXXXX 1</QueryName>
+      <CategoryName>FORXAP-XXXXXX</CategoryName>
+      <FileName>Query1.sql</FileName>
+    </UserQuery>
+
+
+    <UserQuery Description = " ">
+      <QueryName>user queZZZZZZ 1</QueryName>
+      <CategoryName>FORXAP-ZZZZZZ</CategoryName>
+      <FileName>Query2.sql</FileName>
+    </UserQuery>
+
+  -->
+
+  <UserProcedure Description = "Procedimientos almacenados ">
+      <FileName>\test1.sql</FileName>
+      <FileName>\test2.sql</FileName>
+      <FileName>\test3.sql</FileName>
+      <FileName>\test4.sql</FileName>
+
+  </UserProcedure>
+  <!--
+
+    <FormattedSearche Description = " ">
+      <QueryName></QueryName>
+      <QueryBody></QueryBody>
+      <FormID></FormID>
+      <ItemID></ItemID>
+      <ColID></ColID>
+    </FormattedSearche>
+  -->
+
+</UserScripts>

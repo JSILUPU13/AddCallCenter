@@ -1,0 +1,53 @@
+<Application>
+  <Menus>
+    <action type="add">
+
+     
+    
+      <!--Menu de definición del addon de Demo para los Saperos Elite -->
+      
+    <Menu Checked="0" Enabled="1" FatherUID="43525" Image="" Position="9" String="Demo Pesca" Type="2" UniqueID="demo_defi">				</Menu>
+	  <Menu Checked="0" Enabled="1" FatherUID="demo_defi" Image="" Position="1" String="Inicialización del sistema" Type="1" UniqueID="defi_isis"> 	</Menu>	
+	  <Menu Checked="0" Enabled="1" FatherUID="demo_defi" Image="" Position="2" String="Parametrizaciónes generales" Type="1" UniqueID="defi_pgen"> </Menu>	
+    
+	  <Menu Checked="0" Enabled="1" FatherUID="43526" Image="" Position="100" String="Tipo Documentos" Type="1" UniqueID="defi_tipDoc"> </Menu>	
+	  
+	  
+	  
+      <Menu Checked="0" Enabled="1" FatherUID="demo_defi" Image="" Position="4" String="Tipos de Pesca" Type="1" UniqueID="defi_tipoPesca"> 			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="demo_defi" Image="" Position="5" String="Tipo de Embarcación" Type="1" UniqueID="defi_tipoembarca"> 		</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="demo_defi" Image="" Position="6" String="Toneladas" Type="1" UniqueID="defi_toneladas"> </Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="demo_defi" Image="" Position="7" String="Puertos de Embarque" Type="1" UniqueID="defi_puertos"> </Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="demo_defi" Image="" Position="8" String="Aparejos de Pesca" Type="1" UniqueID="defi_aparejos"> </Menu>
+   
+	 
+	 
+	 
+	  <!-- Menu del AddOn Bancos -->
+      <Menu Checked="0" Enabled="1" FatherUID="2816" Image="" Position="14" String="Conciliación de depositos" Type="1" UniqueID="vis_banco">			</Menu>
+  
+	  
+      <Menu Checked="0" Enabled="1" FatherUID="demo_pesca" Image="" Position="1" String="Especies marinas" Type="1" UniqueID="demo_especies">	</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="demo_pesca" Image="" Position="2" String="Capitanes" Type="1" UniqueID="demo_capitanes">	</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="demo_pesca" Image="" Position="3" String="Embarcaciones" Type="1" UniqueID="demo_embarca">			</Menu>
+	    <Menu Checked="0" Enabled="1" FatherUID="demo_pesca" Image="" Position="4" String="Ordenes de Pesca" Type="1" UniqueID="demo_opesca">	</Menu>
+	  
+
+	  <Menu Checked="0" Enabled="1" FatherUID="demo_pesca" Image="" Position="5" String="Exportar" Type="2" UniqueID="demo_asis">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="2048" Image="" Position="25" String="Asistente de Anulación masiva de documentos" Type="1" UniqueID="demo_asis_anulaDoc">	</Menu>
+	
+
+
+
+      <Menu Checked="0" Enabled="1" FatherUID="demo_pesca" Image="" Position="5" String="Informe Demo Pesca Saperos Elite" Type="2" UniqueID="demo_IEspecies">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="demo_IEspecies" Image="" Position="0" String="Informe Embarcaciones" Type="1" UniqueID="IEspecies_1">	</Menu>
+	  <Menu Checked="0" Enabled="1" FatherUID="demo_IEspecies" Image="" Position="1" String="Informe Especies" Type="1" UniqueID="IEspecies_2">	</Menu>
+	  <Menu Checked="0" Enabled="1" FatherUID="demo_IEspecies" Image="" Position="2" String="Informe Capitanes" Type="1" UniqueID="IEspecies_3">	</Menu>
+
+
+
+
+
+    </action>
+  </Menus>
+</Application>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddOnRegData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SlientInstallation="No" SlientUpgrade="No" Partnernmsp="Vistony_TI" SchemaVersion="3.0" Type="" MultipleVersion="false" OnDemand="" OnPremise="" ExtName="Call Center Consultas" ExtVersion="1.0.0" Contdata="jsilupu@nogasa.com.pe" Partner="TI Sistemas" DBType="HANA" ClientType="A">
+  <Validity>
+    <SBOCompatibility>
+      <Version From="" To="" />
+    </SBOCompatibility>
+  </Validity>
+  <Configuration>
+    <Repository>
+      <Properties />
+    </Repository>
+    <Deployment>
+      <Properties />
+    </Deployment>
+    <Assignment>
+      <Properties />
+    </Assignment>
+  </Configuration>
+  <Addons>
+    <Addon Name="" Group="" ForceFlag="" Visible="" AutoAssign="" SelfUpgrd="">
+      <x86 AddonExe="D:\js\AddCallCenter\Vistony.Distribucion.Win\bin\Debug\Vistony.Distribucion.Win.exe" AddonSig="">
+        <Installation>
+          <Files>
+            <File FileName="Vistony.Distribucion.Win.exe">
+              <Actions />
+            </File>
+          </Files>
+        </Installation>
+        <Uninstallation>
+          <Files>
+            <File FileName="Vistony.Distribucion.Win.exe">
+              <Actions />
+            </File>
+          </Files>
+        </Uninstallation>
+      </x86>
+      <x64 AddonExe="D:\js\AddCallCenter\Vistony.Distribucion.Win\bin\Debug\Vistony.Distribucion.Win.exe" AddonSig="">
+        <Installation>
+          <Files>
+            <File FileName="CSAudioPlayer.License.txt">
+              <Actions />
+            </File>
+            <File FileName="DLCuotas.dll">
+              <Actions />
+            </File>
+            <File FileName="Forxap.Framework.dll">
+              <Actions />
+            </File>
+            <File FileName="Forxap.Framework.ServiceLayer.dll">
+              <Actions />
+            </File>
+            <File FileName="ICSharpCode.SharpZipLib.dll">
+              <Actions />
+            </File>
+            <File FileName="Newtonsoft.Json.dll">
+              <Actions />
+            </File>
+            <File FileName="Newtonsoft.Json.xml">
+              <Actions />
+            </File>
+            <File FileName="RestSharp.dll">
+              <Actions />
+            </File>
+            <File FileName="RestSharp.xml">
+              <Actions />
+            </File>
+            <File FileName="SAPBusinessOneSDK.dll">
+              <Actions />
+            </File>
+            <File FileName="SharpKernel.dll">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BLL.dll">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BLL.dll.config">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BLL.pdb">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BO.dll">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BO.pdb">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.DAL.dll">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.DAL.dll.config">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.DAL.pdb">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.b1s">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.exe">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.exe.config">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.pdb">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.vshost.exe">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.vshost.exe.config">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.vshost.exe.manifest">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.xml">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\Credits.txt">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\CSCore.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\CSCore.Ffmpeg.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\taglib-sharp.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x64\Readme.txt">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x86\avcodec-57.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x86\avformat-57.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x86\avutil-55.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x86\swresample-2.dll">
+              <Actions />
+            </File>
+            <File FileName="Files\UserFields.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserMenus.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserObjects.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserPermissions.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserScripts.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserTables.xml">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon_16x16.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Wizard.JPG">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon\Icon_128x128.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon\Icon_16x16.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon\Icon_32x32.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon\Icon_64x64.png">
+              <Actions />
+            </File>
+            <File FileName="Scripts\SQL\test1.sql">
+              <Actions />
+            </File>
+            <File FileName="Scripts\SQL\test2.sql">
+              <Actions />
+            </File>
+            <File FileName="Scripts\SQL\test3.sql">
+              <Actions />
+            </File>
+            <File FileName="Scripts\SQL\test4.sql">
+              <Actions />
+            </File>
+          </Files>
+        </Installation>
+        <Uninstallation>
+          <Files>
+            <File FileName="CSAudioPlayer.License.txt">
+              <Actions />
+            </File>
+            <File FileName="DLCuotas.dll">
+              <Actions />
+            </File>
+            <File FileName="Forxap.Framework.dll">
+              <Actions />
+            </File>
+            <File FileName="Forxap.Framework.ServiceLayer.dll">
+              <Actions />
+            </File>
+            <File FileName="ICSharpCode.SharpZipLib.dll">
+              <Actions />
+            </File>
+            <File FileName="Newtonsoft.Json.dll">
+              <Actions />
+            </File>
+            <File FileName="Newtonsoft.Json.xml">
+              <Actions />
+            </File>
+            <File FileName="RestSharp.dll">
+              <Actions />
+            </File>
+            <File FileName="RestSharp.xml">
+              <Actions />
+            </File>
+            <File FileName="SAPBusinessOneSDK.dll">
+              <Actions />
+            </File>
+            <File FileName="SharpKernel.dll">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BLL.dll">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BLL.dll.config">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BLL.pdb">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BO.dll">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.BO.pdb">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.DAL.dll">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.DAL.dll.config">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.DAL.pdb">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.b1s">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.exe">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.exe.config">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.pdb">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.vshost.exe">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.vshost.exe.config">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.vshost.exe.manifest">
+              <Actions />
+            </File>
+            <File FileName="Vistony.Distribucion.Win.xml">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\Credits.txt">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\CSCore.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\CSCore.Ffmpeg.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\taglib-sharp.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x64\Readme.txt">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x86\avcodec-57.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x86\avformat-57.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x86\avutil-55.dll">
+              <Actions />
+            </File>
+            <File FileName="CSPlugins\FFmpeg\x86\swresample-2.dll">
+              <Actions />
+            </File>
+            <File FileName="Files\UserFields.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserMenus.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserObjects.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserPermissions.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserScripts.xml">
+              <Actions />
+            </File>
+            <File FileName="Files\UserTables.xml">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon_16x16.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Wizard.JPG">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon\Icon_128x128.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon\Icon_16x16.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon\Icon_32x32.png">
+              <Actions />
+            </File>
+            <File FileName="Images\Icon\Icon_64x64.png">
+              <Actions />
+            </File>
+            <File FileName="Scripts\SQL\test1.sql">
+              <Actions />
+            </File>
+            <File FileName="Scripts\SQL\test2.sql">
+              <Actions />
+            </File>
+            <File FileName="Scripts\SQL\test3.sql">
+              <Actions />
+            </File>
+            <File FileName="Scripts\SQL\test4.sql">
+              <Actions />
+            </File>
+          </Files>
+        </Uninstallation>
+      </x64>
+    </Addon>
+  </Addons>
+  <XApps>
+    <XApp Name="" Path="" FileName="" />
+  </XApps>
+  <UDQs>
+    <UDQ udqname="">
+      <Hana FileName="" />
+    </UDQ>
+  </UDQs>
+</AddOnRegData>

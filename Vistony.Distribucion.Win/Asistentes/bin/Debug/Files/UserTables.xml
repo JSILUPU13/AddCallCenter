@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserTables>
+  
+    <UserTablesMD Description = "Series" >
+    <TableName>FXP_DEMO_OSER</TableName>
+    <TableDescription>Demo Series</TableDescription>
+    <TableType>bott_Document</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+  </UserTablesMD>
+
+
+  <UserTablesMD Description = "Series Detalle" >
+    <TableName>FXP_DEMO_SER1</TableName>
+    <TableDescription>Demo Series Detalle</TableDescription>
+    <TableType>bott_DocumentLines</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+  </UserTablesMD>
+
+  
+  
+  <UserTablesMD Description = "Configuración" >
+
+    <TableName>FXP_DEMO_OADM</TableName>
+    <TableDescription>Demo Configuración</TableDescription>
+    <TableType>bott_MasterData</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>
+  
+  
+  <UserTablesMD Description = "Barcos Pesqueros" >
+
+    <TableName>FXP_DEMO_OBAR</TableName>
+    <TableDescription>Demo Barcos</TableDescription>
+    <TableType>bott_MasterData</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>
+  
+  <UserTablesMD Description = "Barcos Pesqueros Tipo de Pesca" >
+
+    <TableName>FXP_DEMO_BAR1</TableName>
+    <TableDescription>Demo Barcos Tipo de pesca</TableDescription>
+    <TableType>bott_MasterDataLines</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>
+    
+  <UserTablesMD Description = "Barcos Pesqueros Especies" >
+
+    <TableName>FXP_DEMO_BAR2</TableName>
+    <TableDescription>Demo Barcos especies</TableDescription>
+    <TableType>bott_MasterDataLines</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>
+  
+  
+  
+  <UserTablesMD Description = "Capitanes de Barco" >
+
+    <TableName>FXP_DEMO_OCAP</TableName>
+    <TableDescription>Demo Capitanes</TableDescription>
+    <TableType>bott_MasterData</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>
+
+  
+ <UserTablesMD Description = "Especies">
+
+    <TableName>FXP_DEMO_OESP</TableName>
+    <TableDescription>Demo Especies</TableDescription>
+    <TableType>bott_MasterData</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+ </UserTablesMD>
+  
+
+
+
+  <UserTablesMD Description = "Ordenes de Pesca" >
+    <TableName>FXP_DEMO_OPES</TableName>
+    <TableDescription>Demo Orden de Pesca</TableDescription>
+    <TableType>bott_Document</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+  </UserTablesMD>
+
+
+  <UserTablesMD Description = "Ordenes de Pesca Detalle" >
+    <TableName>FXP_DEMO_PES1</TableName>
+    <TableDescription>Demo Orden Pesca Detalle</TableDescription>
+    <TableType>bott_DocumentLines</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+  </UserTablesMD>
+
+
+ 
+
+  <UserTablesMD Description = "Tipo de Pesca" >
+
+    <TableName>FXP_DEMO_AUX01</TableName>
+    <TableDescription>Demo Tipo de Pesca</TableDescription>
+    <TableType>bott_NoObject</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>
+
+
+
+ <UserTablesMD Description = "Tipo de Embarcación">
+
+    <TableName>FXP_DEMO_AUX02</TableName>
+    <TableDescription>Demo Tipo de Embarcación</TableDescription>
+    <TableType>bott_NoObject</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>  
+ 
+
+  <UserTablesMD Description = "Toneladas">
+
+    <TableName>FXP_DEMO_AUX03</TableName>
+    <TableDescription>Demo Toneladas</TableDescription>
+    <TableType>bott_NoObject</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>  
+ 
+ 
+  <UserTablesMD Description = "Puerto de Embarque" >
+
+    <TableName>FXP_DEMO_AUX04</TableName>
+    <TableDescription>Demo Puerto de Embarque</TableDescription>
+    <TableType>bott_NoObject</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+  </UserTablesMD>  
+  
+  
+  
+
+  
+  <UserTablesMD Description = "Aparejos de Pesca">
+
+    <TableName>FXP_DEMO_AUX05</TableName>
+    <TableDescription>Demo Aparejos de pesca</TableDescription>
+    <TableType>bott_NoObject</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+
+ </UserTablesMD>
+  
+ 
+
+ 
+
+</UserTables>

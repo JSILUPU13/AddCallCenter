@@ -1,0 +1,40 @@
+<Application>
+  <Menus>
+    <action type="add">
+
+
+
+
+
+
+
+      <!-- Menu del AddOn Distribución -->
+      <!--<Menu Checked="0" Enabled="1" FatherUID="43520" Image="D:\Addon\iconos\r11.png" Position="5" String="Test" Type="2" UniqueID="adcdCa22">			</Menu>-->
+      <Menu Checked="0" Enabled="1" FatherUID="43520" Image="" Position="5" String="Call Center" Type="2" UniqueID="addfCall22">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="addfCall22" Image="" Position="1" String="Reporte Semáforo" Type="1" UniqueID="call_semaforo">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="addfCall22" Image="" Position="2" String="Clientes sin Atención" Type="1" UniqueID="call_clientes">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="addfCall22" Image="" Position="3" String="Consulta Venta de Artículos" Type="1" UniqueID="call_articulos">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="addfCall22" Image="" Position="4" String="Consulta Llamadas" Type="1" UniqueID="call_interfase">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="addfCall22" Image="" Position="5" String="Consulta Central" Type="1" UniqueID="call_central">			</Menu>
+
+      <!--<Menu Checked="0" Enabled="1" FatherUID="dis001" Image="" Position="4" String="Asistente de Programación de Despachos" Type="1" UniqueID="dis_wizard">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="dis001" Image="" Position="5" String="Última Milla" Type="2" UniqueID="dis002">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="dis002" Image="" Position="3" String="Estado de Despachos " Type="1" UniqueID="dis_estado">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="dis002" Image="" Position="1" String="Seguimiento de Despachos" Type="1" UniqueID="dis_seguimiento">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="dis001" Image="" Position="5" String="Informes de distribución" Type="2" UniqueID="dis777">			</Menu>-->
+      
+      <!-- Menu del AddOn Distribución en Definiciones-->
+      <!--<Menu Checked="0" Enabled="1" FatherUID="43525" Image="" Position="5" String="Distribución" Type="2" UniqueID="disdef001">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="disdef001" Image="" Position="1" String="Choferes" Type="1" UniqueID="disdef002">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="disdef001" Image="" Position="2" String="Choferes Ubigeo" Type="1" UniqueID="disdef003">			</Menu>
+      <Menu Checked="0" Enabled="1" FatherUID="disdef001" Image="" Position="2" String="Vehiculos" Type="1" UniqueID="disdef004">			</Menu>-->
+
+      <!-- Menu del AddOn Distribución en Informes-->
+      <!--<Menu Checked="0" Enabled="1" FatherUID="43545" Image="" Position="5" String="Distribución" Type="2" UniqueID="disde888">			</Menu>-->
+
+
+
+
+    </action>
+  </Menus>
+</Application>

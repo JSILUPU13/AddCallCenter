@@ -1,0 +1,5 @@
+D:\Fuentes\DLL\BancosDLLCobranzas\DLBancos\DLBanco\bin\Debug\DLBanco.dll
+D:\Fuentes\DLL\BancosDLLCobranzas\DLBancos\DLBanco\bin\Debug\DLBanco.pdb
+D:\Fuentes\DLL\BancosDLLCobranzas\DLBancos\DLBanco\obj\Debug\DLBanco.csproj.CoreCompileInputs.cache
+D:\Fuentes\DLL\BancosDLLCobranzas\DLBancos\DLBanco\obj\Debug\DLBanco.dll
+D:\Fuentes\DLL\BancosDLLCobranzas\DLBancos\DLBanco\obj\Debug\DLBanco.pdb

@@ -1,0 +1,1322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- campos del addon Forxap.Bancos -->
+
+<UserFields>
+
+
+  <Table Description = "Maestro de Cobranzas">
+    <Field Description = "Banco">
+
+      <UserFieldsMD>
+
+        <FieldName>VIS_BankID</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>15</Size>
+        <Description>Banco</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>15</EditSize>
+        <Mandatory>tNO</Mandatory>
+
+      </UserFieldsMD>
+
+    </Field>
+
+    <Field Description = "Depósito">
+
+      <UserFieldsMD>
+
+        <FieldName>VIS_Deposit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Depósito</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>2</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tNO</Mandatory>
+
+      </UserFieldsMD>
+
+    </Field>
+
+    <Field Description = "Fecha">
+      <UserField>
+        <FieldName>VIS_IncomeDate</FieldName>
+        <Type>db_Date</Type>
+        <Size></Size>
+        <Description>Fecha</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>3</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Bancarizado">
+      <UserField>
+        <FieldName>VIS_Banking</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Bancarizado</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>4</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description="Detalle">
+      <UserField>
+        <FieldName>VIS_ItemDetail</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>15</Size>
+        <Description>Detalle</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>5</FieldID>
+        <EditSize>15</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Código Cliente">
+      <UserField>
+        <FieldName>VIS_CardCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>15</Size>
+        <Description>Código Cliente</Description>
+        <SubType></SubType>
+        <LinkedTable>OCRD</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>6</FieldID>
+        <EditSize>15</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="N. Interno Fact">
+      <UserField>
+        <FieldName>VIS_DocEntry</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>11</Size>
+        <Description>N. Interno Fact</Description>
+        <SubType></SubType>
+        <LinkedTable>OINV</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>7</FieldID>
+        <EditSize>11</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Nro. Documento">
+      <UserField>
+        <FieldName>VIS_DocNum</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>10</Size>
+        <Description>Nro. Documento</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>8</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Total importe">
+      <UserField>
+        <FieldName>VIS_DocTotal</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Total importe</Description>
+        <SubType>st_Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>9</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Saldo">
+      <UserField>
+        <FieldName>VIS_Balance</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Saldo</Description>
+        <SubType>st_Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>10</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Monto Cobrado">
+      <UserField>
+        <FieldName>VIS_AmountCharged</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Monto Cobrado</Description>
+        <SubType>Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>11</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Nuevo Saldo">
+      <UserField>
+        <FieldName>New Balance</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Nuevo Saldo</Description>
+        <SubType>st_Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>12</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Nro. Recibo">
+      <UserField>
+        <FieldName>VIS_Receip</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>10</Size>
+        <Description>Nro. Recibo</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>13</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Estado">
+      <UserField>
+        <FieldName>VIS_Status</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Estado</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>P</DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>14</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>P</Value>
+          <Description>Pendiente</Description>
+        </row>
+        <row>
+          <Value>C</Value>
+          <Description>Conciliado</Description>
+        </row>
+        <row>
+          <Value>M</Value>
+          <Description>Manual</Description>
+        </row>
+        <row>
+          <Value>A</Value>
+          <Description>Anulado</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description="Estado QR">
+      <UserField>
+        <FieldName>VIS_QRStatus</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Estado QR</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>15</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description="Comentario">
+      <UserField>
+        <FieldName>VIS_Comments</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>100</Size>
+        <Description>Comentario</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>16</FieldID>
+        <EditSize>100</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Usuario">
+      <UserField>
+        <FieldName>VIS_UserID</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>10</Size>
+        <Description>Usuario</Description>
+        <SubType></SubType>
+        <LinkedTable>OHEM</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>17</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Vendedor">
+      <UserField>
+        <FieldName>VIS_SlpCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Vendedor</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>18</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Motivo de Anulación">
+      <UserField>
+        <FieldName>VIS_CancelReason</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>100</Size>
+        <Description>Motivo de Anulación</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>19</FieldID>
+        <EditSize>100</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="DepositoDirecto">
+      <UserField>
+        <FieldName>VIS_DirectDeposit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>DepositoDirecto</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>20</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description="Pago POS">
+      <UserField>
+        <FieldName>VIS_POSPay</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Pago POS</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_COBRANZA1</TableName>
+        <FieldID>21</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+  </Table>
+
+  <Table Description = "Maestro de Depósitos">
+    <Field Description = "Banco">
+      <UserFieldsMD>
+        <FieldName>VIS_BankID</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>15</Size>
+        <Description>Banco</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>15</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Tipo de Ingreso">
+      <UserFieldsMD>
+        <FieldName>VIS_IncomeType</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Tipo de Ingreso</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>DE</DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>2</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>DE</Value>
+          <Description>Depósito</Description>
+        </row>
+        <row>
+          <Value>CH</Value>
+          <Description>Cheque</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description = "Fecha">
+      <UserFieldsMD>
+        <FieldName>VIS_Date</FieldName>
+        <Type>db_Date</Type>
+        <Size></Size>
+        <Description>Fecha</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>3</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Fecha Diferida">
+      <UserFieldsMD>
+        <FieldName>VIS_DeferredDate</FieldName>
+        <Type>db_Date</Type>
+        <Size></Size>
+        <Description>Fecha Diferida</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>4</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Usuario">
+      <UserFieldsMD>
+        <FieldName>VIS_UserID</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Usuario</Description>
+        <SubType></SubType>
+        <LinkedTable>OHEM</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>5</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Vendedor">
+      <UserFieldsMD>
+        <FieldName>VIS_SlpCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Vendedor</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>6</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Estado">
+      <UserFieldsMD>
+        <FieldName>VIS_Status</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Estado</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>P</DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>7</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>P</Value>
+          <Description>Pendiente</Description>
+        </row>
+        <row>
+          <Value>C</Value>
+          <Description>Conciliado</Description>
+        </row>
+        <row>
+          <Value>M</Value>
+          <Description>Manual</Description>
+        </row>
+        <row>
+          <Value>A</Value>
+          <Description>Anulado</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description = "Depósito">
+      <UserFieldsMD>
+        <FieldName>VIS_Deposit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Depósito</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>8</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Bancarizado">
+      <UserFieldsMD>
+        <FieldName>VIS_Banking</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Bancarizado</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>9</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description = "Comentario">
+      <UserFieldsMD>
+        <FieldName>VIS_Comments</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>100</Size>
+        <Description>Comentario</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>10</FieldID>
+        <EditSize>100</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Motivo Anulación">
+      <UserFieldsMD>
+        <FieldName>VIS_CancelReason</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Motivo Anulación</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>11</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Monto Depósito">
+      <UserFieldsMD>
+        <FieldName>VIS_AmountDeposit</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Monto Depósito</Description>
+        <SubType>st_Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>12</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Depósito Directo">
+      <UserFieldsMD>
+        <FieldName>VIS_DirectDeposit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Depósito Directo</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>13</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description = "Pago POS">
+      <UserFieldsMD>
+        <FieldName>VIS_POSPay</FieldName>
+        <Type>db_Alpha</Type>
+        <Size></Size>
+        <Description>Pago POS</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO1</TableName>
+        <FieldID>14</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+  </Table>
+
+  <Table Description = "Cobranzas">
+    <Field Description = "Banco">
+
+      <UserFieldsMD>
+
+        <FieldName>VIS_BankID</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>15</Size>
+        <Description>Banco</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>15</EditSize>
+        <Mandatory>tNO</Mandatory>
+
+      </UserFieldsMD>
+
+    </Field>
+
+    <Field Description = "Depósito">
+
+      <UserFieldsMD>
+
+        <FieldName>VIS_Deposit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Depósito</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>2</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tNO</Mandatory>
+
+      </UserFieldsMD>
+
+    </Field>
+
+    <Field Description = "Fecha">
+      <UserField>
+        <FieldName>VIS_IncomeDate</FieldName>
+        <Type>db_Date</Type>
+        <Size></Size>
+        <Description>Fecha</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>3</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Bancarizado">
+      <UserField>
+        <FieldName>VIS_Banking</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Bancarizado</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>4</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description="Detalle">
+      <UserField>
+        <FieldName>VIS_ItemDetail</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>15</Size>
+        <Description>Detalle</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>5</FieldID>
+        <EditSize>15</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Código Cliente">
+      <UserField>
+        <FieldName>VIS_CardCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>15</Size>
+        <Description>Código Cliente</Description>
+        <SubType></SubType>
+        <LinkedTable>OCRD</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>6</FieldID>
+        <EditSize>15</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="N. Interno Fact">
+      <UserField>
+        <FieldName>VIS_DocEntry</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>11</Size>
+        <Description>N. Interno Fact</Description>
+        <SubType></SubType>
+        <LinkedTable>OINV</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>7</FieldID>
+        <EditSize>11</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Nro. Documento">
+      <UserField>
+        <FieldName>VIS_DocNum</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>10</Size>
+        <Description>Nro. Documento</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>8</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Total importe">
+      <UserField>
+        <FieldName>VIS_DocTotal</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Total importe</Description>
+        <SubType>st_Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>9</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Saldo">
+      <UserField>
+        <FieldName>VIS_Balance</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Saldo</Description>
+        <SubType>st_Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>10</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Monto Cobrado">
+      <UserField>
+        <FieldName>VIS_AmountCharged</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Monto Cobrado</Description>
+        <SubType>Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>11</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Nuevo Saldo">
+      <UserField>
+        <FieldName>New Balance</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Nuevo Saldo</Description>
+        <SubType>st_Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>12</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Nro. Recibo">
+      <UserField>
+        <FieldName>VIS_Receip</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>10</Size>
+        <Description>Nro. Recibo</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>13</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Estado">
+      <UserField>
+        <FieldName>VIS_Status</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Estado</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>P</DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>14</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>P</Value>
+          <Description>Pendiente</Description>
+        </row>
+        <row>
+          <Value>C</Value>
+          <Description>Conciliado</Description>
+        </row>
+        <row>
+          <Value>M</Value>
+          <Description>Manual</Description>
+        </row>
+        <row>
+          <Value>A</Value>
+          <Description>Anulado</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description="Estado QR">
+      <UserField>
+        <FieldName>VIS_QRStatus</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Estado QR</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>15</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description="Comentario">
+      <UserField>
+        <FieldName>VIS_Comments</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>100</Size>
+        <Description>Comentario</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>16</FieldID>
+        <EditSize>100</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Usuario">
+      <UserField>
+        <FieldName>VIS_UserID</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>10</Size>
+        <Description>Usuario</Description>
+        <SubType></SubType>
+        <LinkedTable>OHEM</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>17</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Vendedor">
+      <UserField>
+        <FieldName>VIS_SlpCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Vendedor</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>18</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="Motivo de Anulación">
+      <UserField>
+        <FieldName>VIS_CancelReason</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>100</Size>
+        <Description>Motivo de Anulación</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>19</FieldID>
+        <EditSize>100</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+    </Field>
+    <Field Description="DepositoDirecto">
+      <UserField>
+        <FieldName>VIS_DirectDeposit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>DepositoDirecto</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>20</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description="Pago POS">
+      <UserField>
+        <FieldName>VIS_POSPay</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Pago POS</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_COBRANZA</TableName>
+        <FieldID>21</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      </UserField>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+  </Table>
+
+  <Table Description = "Depósitos">
+    <Field Description = "Banco">
+      <UserFieldsMD>
+        <FieldName>VIS_BankID</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>15</Size>
+        <Description>Banco</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>15</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Tipo de Ingreso">
+      <UserFieldsMD>
+        <FieldName>VIS_IncomeType</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Tipo de Ingreso</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>DE</DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>2</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>DE</Value>
+          <Description>Depósito</Description>
+        </row>
+        <row>
+          <Value>CH</Value>
+          <Description>Cheque</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description = "Fecha">
+      <UserFieldsMD>
+        <FieldName>VIS_Date</FieldName>
+        <Type>db_Date</Type>
+        <Size></Size>
+        <Description>Fecha</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>3</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Fecha Diferida">
+      <UserFieldsMD>
+        <FieldName>VIS_DeferredDate</FieldName>
+        <Type>db_Date</Type>
+        <Size></Size>
+        <Description>Fecha Diferida</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>4</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Usuario">
+      <UserFieldsMD>
+        <FieldName>VIS_UserID</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Usuario</Description>
+        <SubType></SubType>
+        <LinkedTable>OHEM</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>5</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Vendedor">
+      <UserFieldsMD>
+        <FieldName>VIS_SlpCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Vendedor</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>6</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Estado">
+      <UserFieldsMD>
+        <FieldName>VIS_Status</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Estado</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>P</DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>7</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>P</Value>
+          <Description>Pendiente</Description>
+        </row>
+        <row>
+          <Value>C</Value>
+          <Description>Conciliado</Description>
+        </row>
+        <row>
+          <Value>M</Value>
+          <Description>Manual</Description>
+        </row>
+        <row>
+          <Value>A</Value>
+          <Description>Anulado</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description = "Depósito">
+      <UserFieldsMD>
+        <FieldName>VIS_Deposit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Depósito</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>8</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Bancarizado">
+      <UserFieldsMD>
+        <FieldName>VIS_Banking</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Bancarizado</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>9</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description = "Comentario">
+      <UserFieldsMD>
+        <FieldName>VIS_Comments</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>100</Size>
+        <Description>Comentario</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>10</FieldID>
+        <EditSize>100</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Motivo Anulación">
+      <UserFieldsMD>
+        <FieldName>VIS_CancelReason</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Motivo Anulación</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>11</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Monto Depósito">
+      <UserFieldsMD>
+        <FieldName>VIS_AmountDeposit</FieldName>
+        <Type>db_Unit</Type>
+        <Size></Size>
+        <Description>Monto Depósito</Description>
+        <SubType>st_Price</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>12</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+    </Field>
+    <Field Description = "Depósito Directo">
+      <UserFieldsMD>
+        <FieldName>VIS_DirectDeposit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>10</Size>
+        <Description>Depósito Directo</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>N</DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>13</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+    <Field Description = "Pago POS">
+      <UserFieldsMD>
+        <FieldName>VIS_POSPay</FieldName>
+        <Type>db_Alpha</Type>
+        <Size></Size>
+        <Description>Pago POS</Description>
+        <SubType></SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>@VIST_DEPOSITO</TableName>
+        <FieldID>14</FieldID>
+        <EditSize></EditSize>
+        <Mandatory>tNo</Mandatory>
+      </UserFieldsMD>
+      <ValidValuesMD>
+        <row>
+          <Value>Y</Value>
+          <Description>Si</Description>
+        </row>
+        <row>
+          <Value>N</Value>
+          <Description>No</Description>
+        </row>
+      </ValidValuesMD>
+    </Field>
+  </Table>
+
+</UserFields>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserTables>
+
+  <UserTablesMD Description = "Maestro de depósitos" >
+    <TableName>"@VIST_DEPOSITO1"</TableName>
+    <TableDescription>Depositos</TableDescription>
+    <TableType>bott_MasterData</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+  </UserTablesMD>
+
+
+  <UserTablesMD Description = "Maestro de cobranzas" >
+    <TableName>"@VIST_COBRANZA1"</TableName>
+    <TableDescription>Cobranzas</TableDescription>
+    <TableType>bott_MasterData</TableType>
+    <Archivable>tNO</Archivable>
+    <ArchiveDateField></ArchiveDateField>
+  </UserTablesMD>
+
+
+
+
+  
+ 
+
+ 
+
+</UserTables>

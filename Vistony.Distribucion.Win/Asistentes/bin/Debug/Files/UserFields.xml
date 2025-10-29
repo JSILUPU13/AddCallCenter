@@ -1,0 +1,913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- campos del addon Forxap.Demo.Pesca -->
+
+<UserFields>
+
+
+<Table Description = "Series "> 
+
+  <Field Description = "Tipo de Documento">  
+
+    <UserFieldsMD>
+      
+        <FieldName>DocType</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Tipo Documento</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>01</DefaultValue>
+        <TableName>@FXP_DEMO_OSER</TableName>
+		    <FieldID>1</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tYES</Mandatory>
+      
+    </UserFieldsMD>
+	<ValidValuesMD>
+	</ValidValuesMD>
+
+	
+  </Field>
+
+  <Field Description = "Descripción">  
+
+    <UserFieldsMD>
+      
+        <FieldName>Description</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>100</Size>
+        <Description>Descripción</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>01</DefaultValue>
+        <TableName>@FXP_DEMO_OSER</TableName>
+		<FieldID>2</FieldID>
+        <EditSize>100</EditSize>
+        <Mandatory>tYES</Mandatory>
+      
+    </UserFieldsMD>
+	
+
+	
+  </Field>
+  
+</Table>
+
+<Table Description = "Series Detalle "> 
+
+  <Field Description = "Serie">  
+
+    <UserFieldsMD>
+      
+        <FieldName>Serie</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Serie</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>003</DefaultValue>
+        <TableName>@FXP_DEMO_SER1</TableName>
+		<FieldID>1</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tYES</Mandatory>
+      
+    </UserFieldsMD>
+
+
+	
+  </Field>
+
+  <Field Description = "Correlativo Inicial">  
+
+    <UserFieldsMD>
+      
+        <FieldName>StartNumber</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Correlativo Inicial</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>00</DefaultValue>
+        <TableName>@FXP_DEMO_SER1</TableName>
+		<FieldID>2</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tYES</Mandatory>
+      
+    </UserFieldsMD>
+	
+
+	
+  </Field>
+
+  <Field Description = "Correlativo Final">  
+
+    <UserFieldsMD>
+      
+        <FieldName>FinishNumber</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Correlativo final</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>00</DefaultValue>
+        <TableName>@FXP_DEMO_SER1</TableName>
+		<FieldID>3</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tYES</Mandatory>
+      
+    </UserFieldsMD>
+	
+
+	
+  </Field>
+  
+  <Field Description = "Correlativo Siguiente">  
+
+    <UserFieldsMD>
+      
+        <FieldName>NextNumber</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>20</Size>
+        <Description>Correlativo Siguient</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>00</DefaultValue>
+        <TableName>@FXP_DEMO_SER1</TableName>
+		<FieldID>4</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tYES</Mandatory>
+      
+    </UserFieldsMD>
+	
+
+	
+  </Field>
+  
+</Table>
+
+<Table Description = "Parametrizaciones generales "> 
+
+
+  <Field Description = "Crear/Actualizar Tablas">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>UpsertTables</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>1</Size>
+        <Description>Crear Tablas</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>Y</DefaultValue>
+        <TableName>@FXP_DEMO_OADM</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>1</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	    <ValidValuesMD>
+      <row>
+        <Value>Y</Value>
+        <Description>SI</Description>
+      </row>
+      <row>
+        <Value>N</Value>
+        <Description>NO</Description>
+      </row>
+	  
+    </ValidValuesMD>
+
+     
+  </Field>
+
+  <Field Description = "Crear/Actualizar Campos">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>UpsertFields</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>1</Size>
+        <Description>Crear Campos</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>Y</DefaultValue>
+        <TableName>@FXP_DEMO_OADM</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>1</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	    <ValidValuesMD>
+      <row>
+        <Value>Y</Value>
+        <Description>SI</Description>
+      </row>
+      <row>
+        <Value>N</Value>
+        <Description>NO</Description>
+      </row>
+	  
+    </ValidValuesMD>
+
+     
+  </Field>
+   
+
+  <Field Description = "Antiguedad máxima">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>MaxAge</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>7</Size>
+        <Description>Antiguedad máx.</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>0</DefaultValue>
+        <TableName>@FXP_DEMO_OADM</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>7</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	  
+
+     
+  </Field>
+  
+   <Field Description = "Máximo de Ordenes de Pesca al mes">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>MaxOrders</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>7</Size>
+        <Description>Max.Ordenes</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>0</DefaultValue>
+        <TableName>@FXP_DEMO_OADM</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>7</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	  
+
+     
+  </Field>
+   
+   <Field Description = "Tamaño">  >
+
+    <UserFieldsMD>
+      
+        <FieldName>CheckLimit</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>1</Size>
+        <Description>Controla limite</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>Y</DefaultValue>
+        <TableName>@FXP_DEMO_OADM</TableName>
+		<FieldID>1</FieldID>
+        <EditSize>1</EditSize>
+        <Mandatory>tYES</Mandatory>
+      
+    </UserFieldsMD>
+	
+    <ValidValuesMD>
+      <row>
+        <Value>Y</Value>
+        <Description>SI</Description>
+      </row>
+      <row>
+        <Value>N</Value>
+        <Description>NO</Description>
+      </row>
+       
+    </ValidValuesMD>
+	
+  </Field>
+   
+ 
+
+</Table>
+
+<Table Description = "Tipo de Embarcación "> 
+
+  <Field Description = "Tamaño">  >
+
+    <UserFieldsMD>
+      
+        <FieldName>Size</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>1</Size>
+        <Description>Tamaño</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue>S</DefaultValue>
+        <TableName>@FXP_DEMO_AUX02</TableName>
+		<FieldID>1</FieldID>
+        <EditSize>1</EditSize>
+        <Mandatory>tYES</Mandatory>
+      
+    </UserFieldsMD>
+	
+    <ValidValuesMD>
+      <row>
+        <Value>S</Value>
+        <Description>PEQUEÑO</Description>
+      </row>
+      <row>
+        <Value>M</Value>
+        <Description>MEDIANO</Description>
+      </row>
+      <row>
+        <Value>L</Value>
+        <Description>GRANDE</Description>
+      </row>	  
+    </ValidValuesMD>
+	
+  </Field>
+  
+</Table>
+
+<Table Description = "Tipo de pesca "> 
+
+  <Field Description = "Especie">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>EspecieCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Especie</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable>FXP_DEMO_AUX06</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_AUX01</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+</Table>
+
+<Table Description = "Barcos"> 
+
+  <Field Description = "Capitan">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>CapitanCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Capitan</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable>FXP_DEMO_OCAP</LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OBAR</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+
+  <Field Description = "Fecha de fabricación">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>ManufDate</FieldName>
+        <Type>db_Date</Type>
+        <Size>10</Size>
+        <Description>Fecha Fabricación</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OBAR</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+  <Field Description = "Tipo Embarcación">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>TypeCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Tipo Embarcación</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OBAR</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+
+  <Field Description = "Propietario">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>CardCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Propietario</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OBAR</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+  <Field Description = "Toneladas">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>ToneladasCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Toneladas</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OBAR</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+    
+  
+  
+  
+  
+  <Field Description = "Tipo de Pesca">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>TipoBarCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Tipo Pesca</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_BAR1</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+  <Field Description = "Especie">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>EspecieCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Especie</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_BAR1</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+   <Field Description = "Especie Nombre">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>EspecieName</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>150</Size>
+        <Description>Nom.Especie</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_BAR1</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>150</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+   
+  
+  <Field Description = "Aparejos">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>AparejoCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Aparejo</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_BAR2</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+   </Field>
+ 
+  <Field Description = "Cantidad">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>Quantity</FieldName>
+        <Type>db_Numeric</Type>
+        <Size>20</Size>
+        <Description>Cantidad</Description>
+        <SubType>st_Quantity</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_BAR2</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>20</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+   </Field>
+   
+  
+</Table>
+
+<Table Description = "Capitanes"> 
+
+  <Field Description = "Fecha de Nacimiento">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>Birthdate</FieldName>
+        <Type>db_Date</Type>
+        <Size>10</Size>
+        <Description>Fecha Fabricación</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_Demo_OCAP</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+    <Field Description = "Código Empleado">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>EmplD</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Código Empleado</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OCAP</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+  
+</Table>
+
+<Table Description = "Orden de Pesca"> 
+  
+  <Field Description = "Código Proveedor">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>CardCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Código Proveedor</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OPES</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+   <Field Description = "Nombre Proveedor">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>CardName</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>250</Size>
+        <Description>Nombre Proveedor</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OPES</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>520</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+   
+  
+  <Field Description = "Código Capitan">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>CapCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Capitan</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OPES</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+  <Field Description = "Código Embarcación">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>EmbCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Embarcación</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OPES</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+ 
+  <Field Description = "Fecha Documento">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>DocDate</FieldName>
+        <Type>db_Date</Type>
+        <Size>10</Size>
+        <Description>Fec.Doc.</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OPES</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+ 
+   <Field Description = "Fecha Embarque">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>BoardDate</FieldName>
+        <Type>db_Date</Type>
+        <Size>10</Size>
+        <Description>Fec.Embarque</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OPES</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+ 
+  <Field Description = "Fecha de DesEmbarque">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>ShipDate</FieldName>
+        <Type>db_Date</Type>
+        <Size>10</Size>
+        <Description>Fec.Desembarque</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OPES</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+  <Field Description = "Total Cantidad">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>TotalCant</FieldName>
+        <Type>db_Float</Type>
+        <Size>10</Size>
+        <Description>Total Cantidad</Description>
+        <SubType>st_Quantity</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_OPES</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+ 
+ 
+</Table>
+
+<Table Description = "Orden de Pesca Detalle 1"> 
+ 
+  <Field Description = "Código Producto">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>ItemCode</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>50</Size>
+        <Description>Código</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_PES1</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>50</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+ 
+  <Field Description = "Nombre Producto">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>ItemName</FieldName>
+        <Type>db_Alpha</Type>
+        <Size>100</Size>
+        <Description>Código</Description>
+        <SubType>st_None</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_PES1</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>100</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+  
+   <Field Description = "Cantidad">   
+    
+    <UserFieldsMD>
+      
+        <FieldName>Cant</FieldName>
+        <Type>db_Float</Type>
+        <Size>10</Size>
+        <Description>Cantidad</Description>
+        <SubType>st_Quantity</SubType>
+        <LinkedTable></LinkedTable>
+        <DefaultValue></DefaultValue>
+        <TableName>FXP_DEMO_PES1</TableName>
+        <FieldID>1</FieldID>
+        <EditSize>10</EditSize>
+        <Mandatory>tNO</Mandatory>
+      
+    </UserFieldsMD>
+  	
+     
+  </Field>
+
+
+  <Field Description = "Crear/Actualizar Tablas">
+
+    <UserFieldsMD>
+
+      <FieldName>UpsertTables</FieldName>
+      <Type>db_Alpha</Type>
+      <Size>1</Size>
+      <Description>Crear Tablas</Description>
+      <SubType>st_None</SubType>
+      <LinkedTable></LinkedTable>
+      <DefaultValue>Y</DefaultValue>
+      <TableName>@FXP_DEMO_AUX05</TableName>
+      <FieldID>1</FieldID>
+      <EditSize>1</EditSize>
+      <Mandatory>tNO</Mandatory>
+
+    </UserFieldsMD>
+    <ValidValuesMD>
+      <row>
+        <Value>Y</Value>
+        <Description>SI</Description>
+      </row>
+      <row>
+        <Value>N</Value>
+        <Description>NO</Description>
+      </row>
+
+    </ValidValuesMD>
+
+
+  </Field>
+
+
+
+
+
+</Table>
+  
+
+  
+  
+
+ 
+
+   
+</UserFields>

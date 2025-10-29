@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <UserPermissions>
+    
+      <!--Creación de Permisos de usuario para el Addon Demo los Saperos Elite 
+	  Valores para Options
+	  
+	  bou_FullNone
+	  bou_FullReadNone
+	  
+	  PermissionId max 20 caracteres
+	  -->
+      
+      <UserPermission> 
+	     
+		<PermissionId>FXP_DEMO</PermissionId>
+        <Name>Forxap Demo </Name>
+        <Options>bou_FullNone</Options>
+        <Level>1</Level>
+		<FindFormID>tNO</FindFormID>
+     	<ParentID></ParentID>
+
+   	  </UserPermission>
+
+      <UserPermission> 
+	     
+		<PermissionId>FXP_DEMO_DEF</PermissionId>
+        <Name>Definiciones </Name>
+        <Options>bou_FullNone</Options>
+        <Level>2</Level>
+		<FindFormID>tNO</FindFormID>
+     	<ParentID>FXP_DEMO</ParentID>
+
+   	  </UserPermission>
+
+      <UserPermission> 
+	     
+		<PermissionId>FXP_DEMO_DEF1</PermissionId>
+        <Name>Tipo de Pesca </Name>
+        <Options>bou_FullNone</Options>
+        <Level>3</Level>
+		<FindFormID>tNO</FindFormID>
+     	<ParentID>FXP_DEMO_DEF</ParentID>
+
+   	  </UserPermission>
+      <UserPermission> 
+	     
+		<PermissionId>FXP_DEMO_DEF2</PermissionId>
+        <Name>Toneladas </Name>
+        <Options>bou_FullNone</Options>
+        <Level>3</Level>
+		<FindFormID>tNO</FindFormID>
+     	<ParentID>FXP_DEMO_DEF</ParentID>
+
+   	  </UserPermission>
+	  
+      <UserPermission> 
+	     
+		<PermissionId>FXP_DEMO_CAPITANES</PermissionId>
+        <Name>Capitanes</Name>
+        <Options>bou_FullReadNone</Options>
+        <Level>2</Level>
+     	<ParentID>FXP_DEMO</ParentID>
+
+		<Forms>
+		
+		  <row>
+			<Form>frmCapitanes</Form>
+		  </row>
+		  <row>
+			<Form>frmEspecies</Form>
+		  </row>
+
+		</Forms>
+   
+   
+	  </UserPermission>
+	
+      <UserPermission> 
+	              
+		<PermissionId>FXP_DEMO_EMBARCACION</PermissionId>
+        <Name>Embarcaciones</Name>
+        <Options>bou_FullReadNone</Options>
+        <Level>2</Level>
+     	<ParentID>FXP_DEMO</ParentID>
+
+		<Forms>
+		
+		  <row>
+			<Form>frmEmbarcaciones</Form>
+		  </row>
+
+
+		</Forms>
+   
+   
+	  </UserPermission>
+	
+      <UserPermission> 
+	              
+		<PermissionId>FXP_DEMO_ORDPESCA</PermissionId>
+        <Name>Orden de Pesca</Name>
+        <Options>bou_FullReadNone</Options>
+        <Level>2</Level>
+     	<ParentID>FXP_DEMO</ParentID>
+
+		<Forms>
+		
+		  <row>
+			<Form>frmOrdenPesca</Form>
+		  </row>
+
+
+		</Forms>
+   
+   
+	  </UserPermission>
+	  
+	  <UserPermission> 
+	              
+		<PermissionId>FXP_DEMO_INFORMES</PermissionId>
+        <Name>Informes</Name>
+        <Options>bou_FullReadNone</Options>
+        <Level>2</Level>
+     	<ParentID>FXP_DEMO</ParentID>
+
+	
+   
+	  </UserPermission>
+
+      <UserPermission> 
+	              
+		<PermissionId>FXP_DEMO_INF01</PermissionId>
+        <Name>Informe Embarcaciones</Name>
+        <Options>bou_FullReadNone</Options>
+        <Level>3</Level>
+     	<ParentID>FXP_DEMO_INFORMES</ParentID>
+
+		<Forms>
+		
+		  <row>
+			<Form>frmOrdenPesca</Form>
+		  </row>
+
+
+		</Forms>
+   
+   
+	  </UserPermission>
+	
+      <UserPermission> 
+	              
+		<PermissionId>FXP_DEMO_INF02</PermissionId>
+        <Name>Informe Especies</Name>
+        <Options>bou_FullReadNone</Options>
+        <Level>3</Level>
+     	<ParentID>FXP_DEMO_INFORMES</ParentID>
+
+		<Forms>
+		
+		  <row>
+			<Form>frmOrdenPesca</Form>
+		  </row>
+
+
+		</Forms>
+   
+   
+	  </UserPermission>
+	  
+	  
+      <UserPermission> 
+	              
+		<PermissionId>FXP_DEMO_INF03</PermissionId>
+        <Name>Informe Capitanes</Name>
+        <Options>bou_FullReadNone</Options>
+        <Level>3</Level>
+     	<ParentID>FXP_DEMO_INFORMES</ParentID>
+
+		<Forms>
+		
+		  <row>
+			<Form>frmOrdenPesca</Form>
+		  </row>
+
+
+		</Forms>
+   
+   
+	  </UserPermission>
+			
+  </UserPermissions>
